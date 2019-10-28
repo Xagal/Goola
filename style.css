@@ -18,8 +18,11 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
-.container {
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: #4C4C4C;
+}
+.nav-container {
     min-height: 105px;
     max-height: 130px;
 }
@@ -31,10 +34,26 @@ time, mark, audio, video {
 .nav .fixed {
     display: flex;
     flex-direction: row;
-    height: 52%;
-    /* height: 55px; */
+    /* height: 52%; */
+    height: 60px;
 }
 .nav .second-row {
-    height: 48%;
+    height: 45px;
+    /* height: 48%; */
+    background-color: rgba(190, 190, 190, 0.15);
+    border: 1px solid #CACACA;
 }
 
+.nav .fixed .logo{
+    padding: 10px 20px;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.shop {
+    font-size: 30px;
+}
+.icon {
+    justify-content: flex-end;
+}
