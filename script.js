@@ -1,6 +1,5 @@
-
 //function to create products for gallery
-
+let imageArr = ['images/products/nice shirt woman.PNG']
 let productDescRow1 = 'Lorem ipsum dolor sit amet'
 let productDescRow2 = 'Lorem ipsum'
 let descArr = []
@@ -9,10 +8,11 @@ descArr.push(productDescRow2)
 
 
 
-const product = function(arr) {
+const product = function(arr, arrOfImages, galleryNumber) {
     let product = document.createElement('div')
     product.setAttribute('class', 'product-container container')
-    let gallery = document.querySelector('.gallery.container')
+    let gallery = document.querySelector(`.g${galleryNumber}`)
+    console.log(gallery)
     gallery.appendChild(product)
     let imageContainer = document.createElement('div')
     imageContainer.setAttribute('class', 'image-container container')
@@ -20,6 +20,10 @@ const product = function(arr) {
     let imageWrapper = document.createElement('div')
     imageWrapper.setAttribute('class', 'image-wrapper')
     imageContainer.appendChild(imageWrapper)
+    let image = document.createElement('img')
+    image.setAttribute('src', imageArr[0])
+    image.setAttribute('class', 'carousel-image')
+    imageWrapper.appendChild(image)
     let descContainer = document.createElement('div')
     descContainer.setAttribute('class', 'description-container container')
     product.appendChild(descContainer)
@@ -32,5 +36,8 @@ const product = function(arr) {
       }
    }
 for (let i = 0; i < 8; i++) {
-    product(descArr);
+    product(descArr, imageArr, 1);
+}
+for (let i = 0; i < 4; i++) {
+    product(descArr, imageArr, 2)
 }

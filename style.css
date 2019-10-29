@@ -45,7 +45,11 @@ body {
     flex-direction: row;
 }
 .logo{
-    padding: 0 20px;
+    padding: 2px 20px 0;
+}
+.logo.name {
+    height: 30px;
+    /* width: 100px; */
 }
 .shop {
     margin: 0 50px;
@@ -164,33 +168,109 @@ img {
 }
 .gallery.container {
     flex-flow: wrap;
-    padding: 20px 80px;
+    padding: 20px 75px;
+    justify-content: space-evenly;
+}
+.gallery.g1.container {
+    border-bottom: 1px solid #CACACA;
 }
 .product-container {
-    height: 400px;
-    width: 380px;
-    border: 1px solid black;
+    /* height: 400px; */
+    flex: 1 1 100px;
+    min-width: 380px;
+    max-width:480px;
+    /* width: 380px; */
 }
 /* might be able to join these ^\/ */
 .product-container.container {
     margin: 0 25px 25px 0;
     flex-direction: column;
     justify-content: space-evenly;
+    border: 1px solid #CACACA;
+    box-shadow: 1px 1px 6px rgb(191, 192, 192);
 }
 .image-container {
-    height: 75%;
-    width: 300px;
+    height: auto;
+    width: 80%;
     margin-top: 20px;
-    border: 1px solid black;
+
 }
 .description-container.container {
     flex-direction: column;
-    height: 12%;
+    min-height: 55px;
     justify-content: space-evenly;
+    padding: 10px 0;
+    
     /* flex
     height: 50px; */
 }
 .product-description {
-    /* fontstuff */
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.gallery.g2.container {
+    margin-bottom: 0;
+}
+footer {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-top: 1px solid #CACACA;
+    box-shadow: 2px 2px 8px rgb(151, 151, 151);
+    background-color: rgba(191, 192, 192, .15);
+}
+.footer-left-col {
+    display: flex;
+    margin-left: 20px;
+    width: 25%;
+    justify-content: center;
+}
+.footer-nav.container {
+    justify-content: space-between;
+    margin: 0 12px 0 20px;
+}
+p {
+    padding: 2px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer-middle-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
 }
 
+.copyright {
+    text-align: center;
+}
+.footer-middle-col .logo.container {
+    margin-bottom: 12px;
+}
+.copyright:last-of-type {
+    margin-top: 8px;
+    width: 300px;
+}
+.social-media.container {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.social-media-icon{
+    height: 50px;
+    width: 50px;
+    margin: 0 6px
+}
+.social-media-icon:nth-child(3) {
+    margin: 0 0 0 6px
+}
+.social-media-icon:last-of-type {
+    margin: 0;
+}
