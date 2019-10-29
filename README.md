@@ -1,2 +1,2 @@
-# GooYA
+# GOOLA
 Commerce Website
