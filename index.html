@@ -5,32 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class='nav-container'>
+        <div class='nav-wrapper'>
             <div class='nav'>
-                <div class='fixed'>
+                <div class='fixed nav-row'>
                     <div class='logo container'>
-                        <img src='/images/logo.png'>
+                        <img src='images/logo.png'>
                     </div>
                     <div class='container'>
-
-                            <div class='shop' href=''>Shop</div>
-
+                        <div class='shop' href=''>Shop</div>
                     </div>
-                    <div class='searchbar overflow-check'>
+                    <div class='searchbar-mobile'><!--thining about adding to fixed-->
+                    </div>
+                    <div class='icon-wrapper'>
+                        <div class='icon container'>
+                            <img src='images/profile.PNG'>
+                            <img src="images/cart.png">
                         </div>
-                    <div class='icon container'>
-                        <img src="images/profile cart.png">
                     </div>
                 </div>
                 <div class='second-row'>
-                    <div class='sub-categories'>
+                    <div class='sub-categories container'>
+                        <div class='category'>Featured</div> <!-- dont need this class for now -->
+                        <div class='category'>Brands</div>
+                        <div class='category'>Mens</div>
+                        <div class='category'>Womens</div>
                     </div>
-                    <div class='searchbar'>
+                    <div class='container search-wrapper'>
+                        <div class='searchbar container'>
+                            <img src="images/search.PNG">
+                            <div class='search-text'>Search</div> 
+                        </div>
+                    </div>
+                    <div class='sub-categories right container'>
+                        <div class='category'>About us</div>
+                        <div class='category'>News</div>
                     </div>
                     <div class='about-news'>
                     </div>
@@ -39,13 +52,38 @@
         </div>
     </header>
     <main>
-        <div class='carosel-container'>
-            <div class='image-carosel'>
-            </div>
-            <div class='sub-categories-carosel'>
+        <div class='carousel-container'>
+            <div class='carousel'>
+                <div class='image-container1'>
+                    <img class='carousel-image' src='images/products/cg purse.PNG'>
+                </div>
+                <div class='image-container2'>
+                    <img class='carousel-image' src='images/products/burberry purse.PNG'>
+                </div>
+                <div class='image-container3'>
+                    <img class='carousel-image' src='images/products/louis belt.PNG'>
+                </div>
             </div>
         </div>
+        <div class='sub-categories-carousel'>
+                <div class='category row-2'>Shirts</div>
+                <div class='category row-2'>Designer</div>
+                <div class='category row-2'>Glasses</div>
+                <div class='middle-category'>Find something for you...</div>
+                <div class='category row-2'>Hangbags</div>
+                <div class='category row-2'>Backpacks</div>
+                <div class='category row-2'>Belts</div>
+        </div>
+        <div class='gallery-heading container'>
+            <div class='gallery-heading-wrapper'>
+                <div class='gallery-heading'>Featured</div>
+            </div>
+        </div>
+        <div class='gallery container'>
+
+        </div>
     </main>
+<script src="script.js"></script>
     
 </body>
 </html>
