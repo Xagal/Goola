@@ -168,7 +168,7 @@ img {
 }
 .gallery.container {
     flex-flow: wrap;
-    padding: 20px 75px;
+    padding: 20px 60px;
     justify-content: space-evenly;
 }
 .gallery.g1.container {
@@ -177,8 +177,8 @@ img {
 .product-container {
     /* height: 400px; */
     flex: 1 1 100px;
-    min-width: 380px;
-    max-width:480px;
+    min-width: 350px;
+    max-width:450px;
     /* width: 380px; */
 }
 /* might be able to join these ^\/ */
