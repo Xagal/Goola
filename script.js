@@ -1,6 +1,6 @@
 //function to create products for gallery
 let imageArr1 = ['images/products/nice shirt woman.PNG', 'images/products/fjall backpack.PNG', 'images/products/brown purse.PNG', 'images/products/glasses on table.PNG', 'images/products/woven bag.PNG', 'images/products/black purse.PNG', 'images/products/glasses generic.PNG', 'images/products/red bag.PNG']
-let imageArr2 = ['images/products/louis bag.PNG', 'images/products/red bag.PNG', 'images/products/backpack beach.PNG', 'images/products/louis belt.PNG']
+let imageArr2 = ['images/products/louis bag.PNG', 'images/products/red bag.PNG', 'images/products/leatherbag.PNG', 'images/products/louis belt.PNG']
 let productDescRow1 = 'Lorem ipsum dolor sit amet'
 let productDescRow2 = 'Lorem ipsum'
 let descArr = []
@@ -13,12 +13,16 @@ const product = function(arr, arrOfImages, galleryNumber, index) {
     let product = document.createElement('div')
     product.setAttribute('class', 'product-container container')
     let gallery = document.querySelector(`.g${galleryNumber}`)
-    console.log(gallery)
     gallery.appendChild(product)
 
     let imageContainer = document.createElement('div')
     imageContainer.setAttribute('class', 'image-container container')
     product.appendChild(imageContainer)
+
+    // <polyline points='0,50 5,40 10,70 15,20 16,25 20,85 25,95 30,10 35,0 40,100 45,90 48,0 56,0 60,90 65,100 70,10 75,0 80,75 85,85 90,20 95,60 100,50 52.5,70' stroke-width=".1" stroke-linecap="butt" stroke-linejoin="miter"></polyline>
+
+    let svg = document.createElement('svg')
+
 
     let imageWrapper = document.createElement('div')
     imageWrapper.setAttribute('class', 'image-wrapper')
@@ -49,18 +53,37 @@ for (let i = 0; i < 4; i++) {
 }
 
 $(document).on('scroll', function () {
-    $(".goola").css("top", Math.max(250 - 1.5*window.scrollY, 0) + "px");
+    $(".goola").css("top", Math.max(100 - .5*window.scrollY, 0) + "px");
     let banner = document.getElementById('banner')
     let bannerHeight = banner.style.height
     temp = bannerHeight.split('')
     temp.pop()
     temp.pop()
     bannerHeight = temp.join('')
-    console.log(bannerHeight)
-    if(bannerHeight < 8) {
-        banner.style.opacity = '0'
+    if(bannerHeight < 2) {
+        document.getElementById("line").style.opacity = '0'
+        document.getElementById("line2").style.opacity = '0'
     } else {
-        banner.style.opacity = '1'
+        document.getElementById("line").style.opacity = '1'
+        document.getElementById("line2").style.opacity = '1'
+
+    }
+    if(window.scrollY < 250) {
+        let temp = document.querySelector('.logo-container-nav')
+        temp.setAttribute('id', 'not-active')
+        temp = document.querySelector('.logo.container')
+        temp.setAttribute('id', 'logo-visible')
+        temp = document.querySelector('.shop.container')
+        temp.setAttribute('id', 'shop-shiftright')
+
+    }
+    if(window.scrollY >= 250) {
+        let temp = document.querySelector('.logo-container-nav')
+        temp.setAttribute('id', 'active')
+        temp = document.querySelector('.logo.container')
+        temp.setAttribute('id', 'logo-hidden')
+        temp = document.querySelector('.shop.container')
+        temp.setAttribute('id', 'shop-shiftleft')
     }
 })
 

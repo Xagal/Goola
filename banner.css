@@ -1,9 +1,33 @@
+@keyframes logo-animate {
+    from {height: 0px;opacity:0;}
+    to {height: 65px;opacity:1;}
+}
+@keyframes logo-deanimate {
+    from {height: 65px;opacity:1;}
+    to {height: 0px;opacity:0;}
+}
+@keyframes logo-visible {
+    from {transform:translateX(-200px);opacity:0;}
+    to {transform:translateX(0);opacity:1;}
+}
+@keyframes logo-hidden {
+    from {transform:translateX(0);opacity:1;}
+    to {transform:translateX(-200px);opacity:0;width:0%}
+}
+@keyframes shop-shiftright {
+    from {transform:translateX(-256px);}
+    to {transform:translateX(0%);}
+}
+@keyframes shop-shiftleft {
+    from {transform:translateX(256px);}
+    to {transform:translateX(0%);}
+}
 .banner-animation {
     width:100%; 
 }
 #banner {
     position: fixed;
-    padding-top: 65px;
+    padding-top: 75px;
     vector-effect: non-scaling-stroke;
     overflow: visible;
     stroke-miterlimit: 80;
@@ -17,7 +41,7 @@
     justify-content: center;
     position: absolute;
     width: 100%;
-    top: 250px;
+    top: 100px;
 
 }
 .goola-scroll{
@@ -31,4 +55,91 @@
 main {
     position: relative;
 }
+#underline {
+    width:40%;
+}
+.underline {
+    width: 70%;
+}
+.logo-container-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+}
+#shop-shiftright {
+    animation-name: shop-shiftright;
+    animation-duration: 1s;
+    margin: 0 50px;
+}
+#shop-shiftleft {
+    animation-name: shop-shiftleft;
+    animation-duration: 1s;
+    margin: 0 25px;
+}
+#logo-visible {
+    animation-name: logo-visible;
+    animation-duration: 1s;
+    width: unset;
+    padding: 2px 20px 3px;
+}
+#logo-hidden{
+    animation-name: logo-hidden;
+    animation-duration: 1s;
+    opacity: 0;
+    width: 0%;
+    padding: 0;
 
+}
+#active {
+    animation-name: logo-animate;
+    animation-duration: 2s;
+}
+#not-active{
+    animation: logo-deanimate;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+.random {
+    position: absolute;
+    bottom: 300px;
+    /* 380px */
+    width: 200%
+}
+
+.product-container {
+    flex: 1 1 100px;
+    min-width: 350px;
+    max-width:450px;
+    margin: 0 25px 25px 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: unset;
+    box-shadow: unset;
+    overflow: hidden;
+    position: relative;
+}
+.image-container {
+    align-content: flex-end;
+    justify-content: center;
+    height: auto;
+}
+.product-image {
+    width: 100%;
+}
+.description-container.container {
+    flex-direction: column;
+    min-height: 55px;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+.product-description {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(43, 43, 43);
+}
