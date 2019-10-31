@@ -249,7 +249,6 @@ p {
     flex-direction: column;
     width: 35%;
 }
-
 .copyright {
     text-align: center;
 }
@@ -270,7 +269,6 @@ p {
     width: 25%;
     justify-content: center;
 }
-
 .social-media-icon{
     height: 50px;
     width: 50px;
