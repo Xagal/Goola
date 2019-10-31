@@ -1,0 +1,21 @@
+.logo.name:hover {
+    opacity: .7;
+}
+.shop:hover {
+    opacity: .7;
+}
+.nav-icon:hover {
+    opacity: .7;
+}
+.product-container.container:hover {
+    background-color: black;
+}
+.category:hover {
+    background-color: black;
+}
+.category:hover a {
+    color: white;
+}
+.product-container.container:hover .description-container.container .product-description {
+    color: white;
+}

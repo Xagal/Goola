@@ -5,52 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href='hover.css'>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class='nav-wrapper'>
-            <div class='nav'>
-                <div class='fixed nav-row'>
-                    <div class=nav-hamburger>
-                        
-                    </div>
-                    <div class='logo container'>
-                        <img class='logo name'src='images/logo.png'>
-                    </div>
-                    <div class='container'>
-                        <div class='shop' href=''>Shop</div>
-                    </div>
-                    <div class='searchbar-mobile'><!--thining about adding to fixed-->
-                    </div>
-                    <div class='icon-wrapper'>
-                        <div class='icon container'>
-                            <img src='images/profile.PNG'>
-                            <img src="images/cart.png">
-                        </div>
-                    </div>
+        <div class='fixed nav-row'>
+            <!-- <div class=nav-hamburger>
+            </div> -->
+            <div class='logo container'>
+                <a href=''><img class='logo name'src='images/goola black.svg'></a>
+            </div>
+            <div class='container'>
+                <a href=''><div class='shop' href=''>Shop</div></a>
+            </div>
+            <!-- <div class='searchbar-mobile'>thining about adding to fixed
+            </div> -->
+            <div class='icon-wrapper'>
+                <div class='icon container'>
+                    <a href=''><img class='nav-icon' src='images/profile.svg'></a>
+                    <a href=''><img class='nav-icon' src="images/cart.svg"></a>
                 </div>
-                <div class='second-row'>
-                    <div class='sub-categories container'>
-                        <div class='category'>Featured</div> <!-- dont need this class for now -->
-                        <div class='category'>Brands</div>
-                        <div class='category'>Mens</div>
-                        <div class='category'>Womens</div>
-                    </div>
-                    <div class='container search-wrapper'>
-                        <div class='searchbar container'>
-                            <img src="images/search.PNG">
-                            <div class='search-text'>Search</div> 
-                        </div>
-                    </div>
-                    <div class='sub-categories right container'>
-                        <div class='category'>About us</div>
-                        <div class='category'>News</div>
-                    </div>
-                    <div class='about-news'>
-                    </div>
+            </div>
+        </div>
+        <div class='overlay'>
+            <div class='banner-animation'>
+                    <svg id="banner" width="100%" height="240px" viewBox="0 0 100 100" preserveAspectRatio="none" style="height: 240px;">
+                        <polyline id='line' points="0,50 5,60 10,30 15,80 16,75 20,15 25,5 30,90 35,100 40,0 45,10 48,100 56,100 60,10 65,0 70,90 75,100 80,25 85,15 90,80 95,40 100,50 52.5,30" stroke-width=".1" stroke-linecap="butt" stroke-linejoin="miter"></polyline>
+                        <polyline id='line' points='0,50 5,40 10,70 15,20 16,25 20,85 25,95 30,10 35,0 40,100 45,90 48,0 56,0 60,90 65,100 70,10 75,0 80,75 85,85 90,20 95,60 100,50 52.5,70' stroke-width=".1" stroke-linecap="butt" stroke-linejoin="miter"></polyline>
+                    </svg>
+            </div>
+        </div>
+        <div class="goola">
+            <img class='goola-scroll' src='images/group 6.svg'></img>
+        </div>
+        <div class='second-row'>
+            <div class='sub-categories container'>
+                <div class='category'><a href=''>Featured</a></div>
+                <div class='category'><a href=''>Brands</a></div>
+                <div class='category'><a href=''>Mens</a></div>
+                <div class='category'><a href=''>Womens</a></div>
+            </div>
+            <div class='container search-wrapper'>
+                <div class='searchbar container'>
+                    <img src="images/search.svg">
+                    <input type='text' placeholder="Search">
                 </div>
+            </div>
+            <div class='sub-categories right container'>
+                <div class='category'><a href=''>About us</a></div>
+                <div class='category'><a href=''>News</a></div>
             </div>
         </div>
     </header>
@@ -68,14 +76,14 @@
                 </div>
             </div>
         </div>
-        <div class='sub-categories-carousel'>
-                <div class='category row-2'>Shirts</div>
-                <div class='category row-2'>Designer</div>
-                <div class='category row-2'>Glasses</div>
-                <div class='middle-category'>Find something for you...</div>
-                <div class='category row-2'>Hangbags</div>
-                <div class='category row-2'>Backpacks</div>
-                <div class='category row-2'>Belts</div>
+        <div class='sub-categories-carousel container'>
+            <div class='category row-2'><a href=''>Shirts</a></div>
+            <div class='category row-2'><a href=''>Designer</a></div>
+            <div class='category row-2'><a href=''>Glasses</a></div>
+            <div class='category row-2'><a href=''>Shoes</a></div>
+            <div class='category row-2'><a href=''>Hangbags</a></div>
+            <div class='category row-2'><a href=''>Backpacks</a></div>
+            <div class='category row-2'><a href=''>Belts</a></div>
         </div>
         <div class='gallery-heading container'>
             <div class='gallery-heading-wrapper'>
@@ -83,15 +91,13 @@
             </div>
         </div>
         <div class='gallery g1 container'>
-
         </div>
         <div class='gallery-heading container'>
-                <div class='gallery-heading-wrapper'>
-                    <div class='gallery-heading'>Discounted</div>
-                </div>
+            <div class='gallery-heading-wrapper'>
+                <div class='gallery-heading'>Discounted</div>
             </div>
+        </div>
         <div class='gallery g2 container'>
-
         </div>
         <footer>
             <div class='footer-left-col'>
@@ -114,7 +120,7 @@
             </div>
             <div class='footer-middle-col'>
                 <div class='logo container'>
-                    <img class ='logo name' src='images/footerlogo.png'>
+                    <img class ='logo name' src='images/Goola footer.svg'>
                 </div>
                 <!-- <div class='footer-text'> -->
                     <div class='copyright'>Copyright 2019 Gooya USA .Inc All rights reserved
@@ -127,11 +133,10 @@
                 <!-- </div> -->
             </div>
             <div class='social-media container'>
-                    <img class='social-media-icon' src='images/socialmedia/snap.svg'>
-                    <img class='social-media-icon'src='images/socialmedia/insta.svg'>
-                    <img class='social-media-icon'src='images/socialmedia/twitter.svg'>
-                    <img class='social-media-icon'src='images/socialmedia/facebook.svg'>
-
+                <img class='social-media-icon' src='images/socialmedia/snap.svg'>
+                <img class='social-media-icon'src='images/socialmedia/insta.svg'>
+                <img class='social-media-icon'src='images/socialmedia/twitter.svg'>
+                <img class='social-media-icon'src='images/socialmedia/facebook.svg'>
             </div>
         </footer>
     </main>

@@ -1,0 +1,34 @@
+.banner-animation {
+    width:100%; 
+}
+#banner {
+    position: fixed;
+    padding-top: 65px;
+    vector-effect: non-scaling-stroke;
+    overflow: visible;
+    stroke-miterlimit: 80;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke: BLACK;
+    max-height: 240px;
+}
+.goola {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 250px;
+
+}
+.goola-scroll{
+    width: 901px;
+    height: 265px;
+}
+.overlay {
+    overflow: hidden;
+    position: relative;
+}
+main {
+    position: relative;
+}
+
