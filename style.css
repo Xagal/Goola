@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
@@ -62,10 +63,13 @@ body {
     padding: 4px 0 0 0;
 }
 .shop {
-    margin: 0 50px;
+    padding-right: 60px;
     font-size: 28px;
     letter-spacing: 1px;
     font-weight: 900;
+    width: 20%;
+    justify-content: center;
+    color: black;
 }
 .icon-wrapper {
     width: 100%;
@@ -79,9 +83,10 @@ body {
 }
 .second-row {
     height: 50px;
+    width: 100%;
     background-color: rgb(245, 245, 245);
-    border-top: 1px solid rgba(0, 0, 0, .5);
-    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -92,25 +97,24 @@ body {
 .sub-categories {
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 45%;
     justify-content: space-around;
     align-items: center;
     font-weight: 600;
 }
 a {
     text-decoration: none;
-    color: black;
+}
+.nav-text {
+    font-size: 23px;
+    letter-spacing: 1px;
+    color: #000000;
 }
 .category {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    font-size: 23px;
-    letter-spacing: 1px;
-    margin: 0 15px;
-    color: #000000;
 }
 .search-wrapper {
     padding: 0 20px;
@@ -135,7 +139,7 @@ input {
 
 .sub-categories.right {
     justify-content: space-evenly;
-    margin: 0 10px;
+    padding-right: 12px;
     width: 25%;
     flex-shrink: 2;
 }
@@ -186,10 +190,13 @@ img {
     border-bottom: 1px solid #000000;
 }
 .product-container {
+    animation: afterpop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     flex: 1 1 100px;
     min-width: 350px;
     max-width:450px;
-    margin: 0 25px 25px 0;
+    margin: 25px;
     flex-direction: column;
     justify-content: space-evenly;
     border: 1px solid #CACACA;
@@ -209,7 +216,9 @@ img {
     padding: 10px 0;
 }
 .product-description {
-    font-size: 19px;
+    text-align: center;
+    padding: 0 10px;;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
     color: rgb(43, 43, 43);
@@ -282,4 +291,191 @@ p {
 }
 .social-media-icon:last-of-type {
     margin: 0;
+}
+.menu {
+    display: none;
+}
+.drop-down.nav-text {
+    padding-left: 15px;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.logo-container-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    opacity: 0;
+}
+#flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width:1060px) {
+    .nav-text {
+        font-size: 19px;
+    }
+    .sub-categories.left .category:first-child {
+        display: none;
+    }
+    .sub-categories.left {
+        width:35%;
+    }
+    .col {
+        font-size: 15px;
+    }
+    .copyright {
+        font-size: 15px;
+    }
+    footer {
+        height: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer :nth-child(1) {order: 3;}
+    footer :nth-child(2) {order: 1;}
+    footer :nth-child(3) {order: 2;}
+
+    
+    footer .footer-middle-col :nth-child(1) {order: 1;}
+    footer .footer-middle-col :nth-child(2) {order: 2;}
+    footer .footer-middle-col :nth-child(3) {order: 3;}
+    
+    .footer-middle-col {
+        margin: unset;
+        height: 250px;
+        flex-direction: column;
+    }
+    .copyright {
+        margin-bottom: 10px;
+    }
+    .footer-left-col {
+        margin: 15px 0;
+    }
+    .social-media-icon {
+        margin: unset;
+    }
+    .product-container {
+        margin: 15px;
+        min-width: 300px;
+        max-width: 400px;
+    }
+    .product-description {
+        font-size: 16px;
+    }
+}
+@media (max-width: 650px) {
+    .gallery.container {
+        padding: 10px 0;
+    }
+    .product-container {
+        margin: 15px;
+        min-width: 200px;
+        max-width: 280px;
+    }
+    .product-description {
+        font-size: 15px;
+    }
+    .second-row {
+        padding: unset;
+    }
+    .sub-categories.right {
+        width: 35%;
+    }
+    .search-wrapper {
+        padding: unset;
+        width: 180px;
+        flex-grow: unset;
+    }
+    .searchbar {
+        width: 100%;
+    }
+    #underline {
+        width: 60%
+    }
+    .icon.container {
+        width: 200px;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    .shop {
+        display: none;
+    }
+    .fixed {
+        padding-left: 10px;
+    }
+    .logo-container-nav {
+        width: 85%;
+        justify-content: flex-start;
+    }
+    .menu {
+        position: relative;
+        display: flex;
+    }
+    .image-container1 {
+        display: none;
+    }
+    .image-container2 {
+        width:56.48%;
+    }
+    .image-container3 {
+        width: 50%;
+    }
+    .menubtn {
+        border: none;
+        background: none;
+        font-size: 23px;
+        font-weight: 600;
+        height: 100%;
+        padding: 0 15px
+    }
+    .menu-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 200px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        border-right: 1px solid rgb(0, 0, 0);
+        border-left: 1px solid rgb(0, 0, 0);
+        z-index: 400;
+        right: 5px;
+        left:-10px;
+        top: 50px;
+        background-color: rgb(245, 245, 245);
+    }
+    .menu-content a {
+        color: black;
+        padding: 12px 16px;
+        display: block;
+        font-size: 23px;
+        letter-spacing: 1px;
+        padding-left: 20px;
+        width: 82%;
+        font-weight: 600;
+    }
+    .menu-content a:hover {
+        background-color: #000;
+        color: white;
+    }
+    .menu:hover .menu-content {
+        display: block;
+    }
+    .menu:hover .menubtn {
+        background-color: #000;
+        color: white;
+    }
+    .sub-categories {
+        display: none;
+    }
+    .sub-categories.right {
+        display: flex;
+    }
 }

@@ -1,3 +1,11 @@
+@keyframes pop {
+    from {border: unset;}
+    to {border: 4px outset black;border-bottom: unset;}
+}
+@keyframes afterpop {
+    from {border: 4px outset black;border-bottom: unset;}
+    to {border: unset;}
+}
 .logo.name:hover {
     opacity: .7;
 }
@@ -9,6 +17,9 @@
 }
 .product-container.container:hover {
     background-color: black;
+    animation: pop;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
 }
 .category:hover {
     background-color: black;

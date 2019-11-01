@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href='hover.css'>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
@@ -13,23 +13,21 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id='home'>
         <div class='fixed nav-row'>
-            <!-- <div class=nav-hamburger>
-            </div> -->
             <div class='logo container'>
+                <a id='flex' href='#home'>
                     <img class ='logo name' src='images/GOOLAlogograhic.svg'>
                     <svg class='underline'width="100%" height="240px" viewBox="0 0 100 100" preserveAspectRatio="none" style="height: 15px;">
                             <polyline points="0,50 5,60 10,30 15,80 16,75 20,15 25,5 30,90 35,100 40,0 45,10 48,100 56,100 60,10 65,0 70,90 75,100 80,25 85,15 90,80 95,40 100,50 52.5,30" stroke-width=".1" stroke-linecap="butt" stroke-linejoin="miter"></polyline>
                             <polyline points='0,50 5,40 10,70 15,20 16,25 20,85 25,95 30,10 35,0 40,100 45,90 48,0 56,0 60,90 65,100 70,10 75,0 80,75 85,85 90,20 95,60 100,50 52.5,70' stroke-width=".1" stroke-linecap="butt" stroke-linejoin="miter"></polyline>
                     </svg>
+                </a>
                 </div>
-            <div id='shop-shiftright' class='shop container'>
+            <div class='shop container'>
                 <a href=''><div class='shop' href=''>Shop</div></a>
             </div>
-            <!-- <div class='searchbar-mobile'>thining about adding to fixed
-            </div> -->
-            <div id='not-active' class='logo-container-nav'>
+            <div class='logo-container-nav'>
                 <img class=logo-test src='images/GOOLAlogograhic.svg'>
                 <svg id="underline" width="100%" height="240px" viewBox="0 0 100 100" preserveAspectRatio="none" style="height: 15px;">
                     <polyline class='underline' points="0,50 5,60 10,30 15,80 16,75 20,15 25,5 30,90 35,100 40,0 45,10 48,100 56,100 60,10 65,0 70,90 75,100 80,25 85,15 90,80 95,40 100,50 52.5,30" stroke-width=".1" stroke-linecap="butt" stroke-linejoin="miter"></polyline>
@@ -55,11 +53,20 @@
             <img class='goola-scroll' src='images/group 6.svg'></img>
         </div>
         <div class='second-row'>
-            <div class='sub-categories container'>
-                <div class='category'><a href=''>Featured</a></div>
-                <div class='category'><a href=''>Brands</a></div>
-                <div class='category'><a href=''>Mens</a></div>
-                <div class='category'><a href=''>Womens</a></div>
+            <div class="menu container">
+                <button class="menubtn">Menu</button>
+                <div class="menu-content">
+                  <a class='drop-down nav-text' href="#featured">Featured</a>
+                  <a class='drop-down nav-text' href="">Brands</a>
+                  <a class='drop-down nav-text' href="">Mens</a>
+                  <a class='drop-down nav-text' href="">Womens</a>
+                </div>
+            </div>
+            <div class='sub-categories left container'>
+                <div class='category'><a class='nav-text' href='#featured'>Featured</a></div>
+                <div class='category'><a class='nav-text' href=''>Brands</a></div>
+                <div class='category'><a class='nav-text' href=''>Mens</a></div>
+                <div class='category'><a class='nav-text' href=''>Womens</a></div>
             </div>
             <div class='container search-wrapper'>
                 <div class='searchbar container'>
@@ -68,8 +75,8 @@
                 </div>
             </div>
             <div class='sub-categories right container'>
-                <div class='category'><a href=''>About us</a></div>
-                <div class='category'><a href=''>News</a></div>
+                <div class='category'><a class='nav-text' href=''>About us</a></div>
+                <div class='category'><a class='nav-text' href=''>News</a></div>
             </div>
         </div>
     </header>
@@ -94,23 +101,7 @@
                         <polyline points='0,50 5,40 10,70 15,20 16,25 20,85 25,95 30,10 35,0 40,100 45,90 48,0 56,0 60,90 65,100 70,10 75,0 80,75 85,85 90,20 95,60 100,50 52.5,70' stroke-width=".1" stroke-linecap="butt" stroke-linejoin="miter"></polyline>
                 </svg>
         </div>
-        <div class='gallery g1 container'>
-            <div class="product-container container">
-                <div class="image-container container">
-                        <svg class='random' width="100%" height="240px" viewBox="0 0 100 100" preserveAspectRatio="none" style="height: 200px;">
-                                <!-- <polyline points="100,0 80,90 65,65 20,80 0,0 100,0" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill='white' stroke='#000'></polyline> -->
-                                <!-- randomize this? -->
-                                <polyline points="0,0 33,75 50,20 67,75 100,0" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill='white' stroke='#000'></polyline>
-                        </svg>
-                    <div class="image-wrapper">
-                        <img src="images/products/nice shirt woman.PNG" class="product-image">
-                    </div>
-                </div>
-                <div class="description-container container">
-                    <div class="product-description">Lorem ipsum dolor sit amet</div>
-                    <div class="product-description">Lorem ipsum</div>
-                </div>
-            </div>
+        <div id='featured' class='gallery g1 container'>
         </div>
         <div class='gallery-heading container'>
                 <div class='gallery-heading text'>Discounted</div>
@@ -121,7 +112,7 @@
         </div>
         <div class='gallery g2 container'>
         </div>
-        <footer>
+        <footer id='footer'>
             <div class='footer-left-col'>
                 <div class='footer-nav container'>
                     <div class='col'>
