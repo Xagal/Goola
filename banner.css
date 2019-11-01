@@ -15,7 +15,7 @@
     to {transform:translateX(-200px);opacity:0;width:0%}
 }
 @keyframes shop-shiftright {
-    from {transform:translateX(-256px);}
+    from {transform:translateX(-155px);}
     to {transform:translateX(0%);}
 }
 @keyframes shop-shiftleft {

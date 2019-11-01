@@ -6,9 +6,6 @@
     from {border: 5px solid black;}
     to {border: 5px solid white;}
 }
-.logo.container a:hover {
-    opacity: .7;
-}
 .logo-container-nav:hover {
     opacity: .7;
 }
@@ -21,7 +18,7 @@
 .product-container.container:hover {
     background-color: black;
     animation: pop;
-    animation-duration: .5s;
+    animation-duration: .5fs;
     animation-fill-mode: forwards;
 }
 .category:hover {
