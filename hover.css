@@ -1,15 +1,18 @@
 @keyframes pop {
-    from {border: unset;}
-    to {border: 4px outset black;border-bottom: unset;}
+    from {border: 5px solid white;}
+    to {border: 5px solid black;}
 }
 @keyframes afterpop {
-    from {border: 4px outset black;border-bottom: unset;}
-    to {border: unset;}
+    from {border: 5px solid black;}
+    to {border: 5px solid white;}
 }
-.logo.name:hover {
+.logo.container a:hover {
     opacity: .7;
 }
-.shop:hover {
+.logo-container-nav:hover {
+    opacity: .7;
+}
+.shop.container .shop:hover {
     opacity: .7;
 }
 .nav-icon:hover {
@@ -18,7 +21,7 @@
 .product-container.container:hover {
     background-color: black;
     animation: pop;
-    animation-duration: 1.25s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 .category:hover {

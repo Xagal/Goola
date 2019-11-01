@@ -18,10 +18,14 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+main {
+    overflow: hidden;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
+    position: absolute;
 }
 .container {
     display: flex;
@@ -54,7 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-
+    z-index: 501;
 }
 .logo.container .underline {
     width: 100%
@@ -70,6 +74,7 @@ body {
     width: 20%;
     justify-content: center;
     color: black;
+    z-index: 502;
 }
 .icon-wrapper {
     width: 100%;
@@ -104,6 +109,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 .nav-text {
     font-size: 23px;
@@ -115,6 +121,7 @@ a {
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 .search-wrapper {
     padding: 0 20px;
@@ -191,16 +198,15 @@ img {
 }
 .product-container {
     animation: afterpop;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-duration: .5s;
+    border: 5px solid white;
     flex: 1 1 100px;
     min-width: 350px;
     max-width:450px;
     margin: 25px;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 1px solid #CACACA;
-    box-shadow: 1px 1px 6px rgb(191, 192, 192);
+    
 }
 .image-container {
     justify-content: center;
@@ -314,10 +320,11 @@ p {
     align-items: center;
     opacity: 0;
 }
-#flex {
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 @media (max-width:1060px) {
     .nav-text {
